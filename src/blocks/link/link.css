@@ -1,0 +1,14 @@
+.link{
+	display: inline-block;
+}
+
+.link__bottom{
+	height: 1px;
+	background-color: #ccc;
+	width: 0px;
+	transition: 0.1s;
+}
+
+a:hover + .link__bottom{
+	width: 100%;
+}
