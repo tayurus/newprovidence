@@ -1,14 +1,54 @@
-doctype html
-html(lang="en")
-    head
-        title Webpage
-        meta(charset="utf-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1")
-        link(rel="stylesheet", href="styles.css")
-        script(src="script.js")
+//- MIXINS include
+include ../link/link.jade
+include ../button/button.jade
+header.header
+    .header__inner
+        .header__left
+            .header__hamburger
+                div
+                div
+                div
+            +link("Tour", "#")
+            +link("Features", "#")
+            +link("Pricing", "#")
         
-    body
-    
-        header.header
+        a.header__logo(href="#")
+        
+        .header__right
+            +link("Help", "#", "link_gray")
+            +link("Contacts", "#")
+            +button(buttonGetApp)
+    .header__submenu-wrapper(hidden)
+        .header__submenu
+            .header__col
+                .header__submenu-title Learn more
+                +link("How it works?", "#", "header__submenu-item")
+                +link("Meeting tools", "#", "header__submenu-item")
+                +link("Live striming", "#", "header__submenu-item")
+                +link("Contat method", "#", "header__submenu-item")
+                
+            .header__col
+                .header__submenu-title About us
+                +link("About us", "#", "header__submenu-item")
+                +link("Features", "#", "header__submenu-item")
+                +link("Privacy police", "#", "header__submenu-item")
+                +link("Terms & Conditions", "#", "header__submenu-item")
+                
+            .header__col
+                .header__submenu-title Support
+                +link("F.A.Q.", "#", "header__submenu-item")
+                +link("Contact us", "#", "header__submenu-item")
+                +link("Live chat", "#", "header__submenu-item")
+                +link("Phone call", "#", "header__submenu-item")
+                
+            .header__col.header__col_mobile
+                +link("Tour", "#", "header__submenu-item")
+                +link("Features", "#", "header__submenu-item")
+                +link("Pricing", "#", "header__submenu-item")
+                +link("Help", "#", "header__submenu-item")
+                +link("Contacts", "#", "header__submenu-item")
+                +button(buttonGetApp)
+.header__empty
+        
     
         

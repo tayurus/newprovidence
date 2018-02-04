@@ -1,4 +1,18 @@
-include ../blocks/header/header.jade
+//- MIXINS include
+include ../blocks/button/button.jade
 
-
+include ../blocks/head/head.jade
+body
+    include ../blocks/header/header.jade
+    
+    main
+        section.container.container_full-width.container_background_top.container_top
+            .container.container_tablet
+                h2.container__title What happens tomorrow?
+                h3.container__text 
+                    | The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since
+                    | his interview with his landlady. His face brightened up, and he began to feel quite convivial.
+                +button(buttonVideo)
+                .container__img.container__img_iphone
+                
     include ../blocks/footer/footer.jade

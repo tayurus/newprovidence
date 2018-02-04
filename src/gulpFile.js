@@ -8,7 +8,7 @@ var rename = require('gulp-rename');
 let src = {
     css: ["**/*.css", "!node_modules/**/*.css"],
     js: ["**/*.js", "!node_modules/**/*.js", "!gulpFile.js"],
-    pages: ["pages/**/*.jade", "blocks/**/*.jade"],
+    pages: ["pages/**/*.jade"],
     img: ["**/*.png", "**/*.jpg", "**/*.svg"],
 }
 
@@ -16,7 +16,7 @@ let dist = {
     main: "../dist/",
     img: "../dist/img"
 }
- 
+
 gulp.task("build", function() {
     //PAGES
     gulp.src(src.pages).pipe(jade({

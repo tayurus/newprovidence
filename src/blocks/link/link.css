@@ -2,13 +2,25 @@
 	display: inline-block;
 }
 
-.link__bottom{
-	height: 1px;
-	background-color: #ccc;
-	width: 0px;
-	transition: 0.1s;
+.link_gray{
+	opacity: 0.4;
+	color: #1b1c1e;
 }
 
-a:hover + .link__bottom{
+.link__label{
+	color: #26272d;
+	font-family: Roboto;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.link__bottom{
+	height: 1px;
+	background-color: #000;
+	width: 0px;
+	transition: 0.3s;
+}
+
+.link:hover > .link__bottom{
 	width: 100%;
 }

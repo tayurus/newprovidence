@@ -1,8 +1,48 @@
 .button{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
     border-radius: 21px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: Roboto;
+    display: flex;
+    justify-content: space-between;
 }
 
-.button_get-app
+.button_get-app{
+    background-color: #267df4;
+    width: 134px;
+    height: 44px;
+    border-radius: 21px;
+    color: #ffffff;
+    padding: 8px 25px 13px 16px;
+
+}
+
+.button_get-app:hover{
+    background-color:#267DCD
+}
+
+.button__label{
+    color: #ffffff;
+    font-family: Roboto;
+}
+
+
+.button_video{
+    width: 207px;
+    display: block;
+    margin: auto;
+    background-color: #edf0f2;
+    font-family: Roboto;
+    border: 1px solid #dddee1;
+    padding: 20px 40px 20px 41px;
+    align-items: center;
+
+}
+
+.button_video > .button__label{
+    color: #26272d;
+}

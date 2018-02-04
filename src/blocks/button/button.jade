@@ -1,9 +1,10 @@
-- var buttonGetApp = {className : "button_get-app", imgBefore : "img/button_apple.png"} 
+- var buttonGetApp = {className : "button_get-app", imgBefore : "img/button_apple.png", label : "Get App", href : "#"} 
+- var buttonVideo = {className : "button_video", imgBefore : "img/play.png", label : "Watch Video", href : "#"} 
 
 mixin button(data)
-    button.button(class=data.className)
-        if (data.imgBefore != "")
+    button.button(class=data.className, onclick="location.href="+data.href)
+        if (data.imgBefore)
             img.button__img-before(src=data.imgBefore)
         span.button__label= data.label
-        if (data.imgAfter != "")
+        if (data.imgAfter)
             img.button__img-after(src=data.imgAfter)
