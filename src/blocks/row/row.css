@@ -5,9 +5,41 @@
     flex-wrap: wrap;
 }
 
+.row_advantage{
+    padding-bottom: 100px;
+}
+
+.row_items_top{
+        align-items: flex-start;
+}
+
+.row_buttons{
+    margin-top: 75px;
+}
+
+@media (max-width:1030px), (max-device-width:1030px) {
+    .row_center-reverse{
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
 
 @media (max-width:1010px),(max-device-width:1010px) {
     .row_advantage{
         justify-content: space-around;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width:420px),(max-device-width:420px) {
+    .row_buttons{
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row_buttons > .button {
+        margin-bottom: 25px;
     }
 }

@@ -46,3 +46,22 @@
 .button_video > .button__label{
     color: #26272d;
 }
+
+.button_hack{
+    width: 220px;
+    background-color: #267df4;
+    color: #fff;
+    padding: 15px 25px;
+    align-items: baseline;
+}
+
+.button_learn{
+    width: 142px;
+    border: 1px solid #dddee1;
+    padding: 15px 25px;
+    background-color: #fff;
+}
+
+.button_learn .button__label{
+    color: #26272d;
+}

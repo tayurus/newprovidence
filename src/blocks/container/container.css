@@ -2,6 +2,7 @@
     max-width: 1100px;
     margin: auto;
     padding: 0px 15px;
+    position: relative;
 }
 
 .container_full-width{
@@ -20,6 +21,14 @@
     padding-top: 90px;
 }
 
+.container_small{
+    max-width: 460px;
+}
+
+.container_hd{
+    max-width: 1336px;
+}
+
 .container__img{
     margin: auto;
 }
@@ -29,6 +38,12 @@
     width: 369px;
     height: 456px;
     margin-top: 50px;
+}
+
+.container__img_iphone2{
+    background: url("img/iphone2.png") no-repeat center / contain;
+    width: 55%;
+    height: 772px;
 }
 
 .container__img_advantage1{
@@ -59,6 +74,12 @@
     margin-bottom: 42px;
 }
 
+.container__title_h2{
+    text-align: left;
+    color: #26272d;
+    font-size: 42px;
+}
+
 .container__text{
     color: #8c8f94;
     font-family: Roboto;
@@ -85,9 +106,20 @@
     text-align: left;
 }
 
+@media (max-width:1030px),(max-device-width:1030px) {
+    .container__img_iphone2{
+        width: 80%;
+    }
+}
+
 @media (max-width:1010px),(max-device-width:1010px) {
     .container_advatange{
         padding: 20px 10px;
+    }
+
+    .container__img_iphone2{
+        width: 90%;
+        height: 90vw;
     }
 }
 
