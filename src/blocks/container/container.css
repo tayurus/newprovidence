@@ -1,15 +1,15 @@
-.container{
+.container {
     max-width: 1100px;
     margin: auto;
     padding: 0px 15px;
     position: relative;
 }
 
-.container_full-width{
+.container_full-width {
     max-width: 100%;
 }
 
-.container_background_top{
+.container_background_top {
     background-image: url("img/background_top.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,56 +17,55 @@
     background-color: #f4f4f5;
 }
 
-.container_top{
+.container_top {
     padding-top: 90px;
 }
 
-.container_small{
+.container_small {
     max-width: 460px;
 }
 
-.container_hd{
+.container_hd {
     max-width: 1336px;
 }
 
-.container__img{
+.container__img {
     margin: auto;
 }
 
-.container__img_iphone{
+.container__img_iphone {
     background: url("img/iphone.png") no-repeat center / cover;
     width: 369px;
     height: 456px;
     margin-top: 50px;
 }
 
-.container__img_iphone2{
+.container__img_iphone2 {
     background: url("img/iphone2.png") no-repeat center / contain;
     width: 55%;
     height: 772px;
 }
 
-.container__img_advantage1{
+.container__img_advantage1 {
     width: 42px;
     height: 52px;
     margin: 0px;
     background: url("img/advantage1.png") no-repeat left top / cover;
 }
-.container__img_advantage2{
+
+.container__img_advantage2 {
     width: 41px;
     height: 48px;
     margin: 0px;
     background: url("img/advantage2.png") no-repeat left top / cover;
 }
 
-
-.container_tablet{
+.container_tablet {
     max-width: 768px;
 }
 
-.container__title{
+.container__title {
     color: #26272d;
-    font-family: Roboto;
     font-size: 62px;
     font-weight: 500;
     text-align: center;
@@ -74,15 +73,14 @@
     margin-bottom: 42px;
 }
 
-.container__title_h2{
+.container__title_h2 {
     text-align: left;
     color: #26272d;
     font-size: 42px;
 }
 
-.container__text{
+.container__text {
     color: #8c8f94;
-    font-family: Roboto;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -90,46 +88,44 @@
     text-align: center;
 }
 
-.container_advatange{
+.container_advatange {
     max-width: 480px;
     padding: 120px 15px 30px 15px;
 }
 
-.container__title_advantage{
+.container__title_advantage {
     font-size: 26px;
     margin: 45px 0px;
     text-align: left;
 }
 
-.container__text_advantage{
+.container__text_advantage {
     margin-bottom: 0px;
     text-align: left;
 }
 
-@media (max-width:1030px),(max-device-width:1030px) {
-    .container__img_iphone2{
+@media (max-width:1030px), (max-device-width:1030px) {
+    .container__img_iphone2 {
         width: 80%;
     }
 }
 
-@media (max-width:1010px),(max-device-width:1010px) {
-    .container_advatange{
+@media (max-width:1010px), (max-device-width:1010px) {
+    .container_advatange {
         padding: 20px 10px;
     }
-
-    .container__img_iphone2{
+    .container__img_iphone2 {
         width: 90%;
         height: 90vw;
     }
 }
 
-@media (max-width:440px),(max-device-width:440px) {
-    .container__img_iphone{
+@media (max-width:440px), (max-device-width:440px) {
+    .container__img_iphone {
         width: 85%;
         height: 240px;
     }
-
-    .container__title:not(.container__title_advantage){
+    .container__title:not(.container__title_advantage) {
         font-size: 52px;
     }
 }

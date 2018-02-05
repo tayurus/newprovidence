@@ -1,4 +1,4 @@
-.header{
+.header {
     padding-top: 43px;
     position: fixed;
     width: 100%;
@@ -7,7 +7,7 @@
     background-color: #f4f4f5;
 }
 
-.header__inner{
+.header__inner {
     max-width: 1170px;
     margin: auto;
     display: flex;
@@ -15,55 +15,55 @@
     justify-content: space-between;
 }
 
-
-.header__hamburger{
+.header__hamburger {
     width: 22px;
     transition: 0.5s;
     cursor: pointer;
 }
 
-.header__hamburger > div{
+.header__hamburger>div {
     height: 2px;
     background-color: #1b1c1e;
     margin-bottom: 3px;
     transition: 0.5s;
 }
 
-.header__hamburger_open{
+.header__hamburger_open {
     transform: translateY(5px);
 }
 
-.header__hamburger_open > div:nth-child(1){
+.header__hamburger_open>div:nth-child(1) {
     display: none;
 }
-.header__hamburger_open > div:nth-child(2){
+
+.header__hamburger_open>div:nth-child(2) {
     transform: rotate(135deg);
 }
-.header__hamburger_open > div:nth-child(3){
+
+.header__hamburger_open>div:nth-child(3) {
     transform: rotate(-135deg) translate(4px, 4px);
 }
 
-
-.header__logo{
+.header__logo {
     display: block;
     width: 142px;
     height: 15px;
     background: url("img/header__logo.png") no-repeat center / contain;
 }
 
-.header_scrolled{
+.header_scrolled {
     background-color: #f7f4fe;
     padding-top: 25px;
 }
 
-.header__left, .header__right{
+.header__left, .header__right {
     width: 275px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.header__submenu-wrapper{
+.header__submenu-wrapper {
     position: fixed;
     width: 100%;
     height: 245px;
@@ -72,7 +72,7 @@
     transition: 0s;
 }
 
-.header__submenu{
+.header__submenu {
     width: 980px;
     left: calc(50% - 634px);
     position: fixed;
@@ -84,23 +84,22 @@
     background-color: #f7f4fe;
 }
 
-.header__col{
+.header__col {
     display: flex;
     flex-direction: column;
 }
 
-.header__col_mobile{
+.header__col_mobile {
     display: none;
 }
 
-.header__submenu-title{
+.header__submenu-title {
     font-weight: bold;
-    font-family: Roboto;
     color: #26272d;
     margin-bottom: 15px;
 }
 
-.header__submenu-item{
+.header__submenu-item {
     align-self: flex-start;
     display: inline-block;
     text-decoration: none;
@@ -109,80 +108,66 @@
     margin-bottom: 15px;
 }
 
-.header__empty{
+.header__empty {
     min-height: 86px;
 }
 
-.header_color_open{
+.header_color_open {
     background-color: #f7f4fe;
 }
 
-
-@media (max-width:1320px),(max-device-width:1320px) {
-    .header__inner{
+@media (max-width:1320px), (max-device-width:1320px) {
+    .header__inner {
         justify-content: space-around;
     }
-
-    .header__submenu{
+    .header__submenu {
         width: 90%;
         left: 0%;
     }
 }
 
-@media (max-width:767px),(max-device-width:767px) {
-    .header__left > .link{
+@media (max-width:767px), (max-device-width:767px) {
+    .header__left>.link {
         display: none;
     }
-
-    .header_scrolled{
+    .header_scrolled {
         padding-top: 40px;
     }
-
-    .header__right{
+    .header__right {
         display: none;
     }
-
-    .header__left{
+    .header__left {
         width: auto;
     }
-
-    .header__submenu{
+    .header__submenu {
         width: 100%;
         padding: 5px 0px;
     }
-
-    .header__inner{
+    .header__inner {
         padding: 0px 15px;
         justify-content: space-between;
     }
-
-    .header__inner_mobile{
+    .header__inner_mobile {
         transform: translateY(-15px);
     }
-
-    .header__logo{
+    .header__logo {
         margin: auto;
     }
-
-    .header__col_mobile{
+    .header__col_mobile {
         display: flex;
         width: 100%;
         align-items: center;
     }
-
-    .header__col_mobile .link:nth-child(1){
+    .header__col_mobile .link:nth-child(1) {
         padding-top: 12px;
         border-top: 1px solid #ccc;
     }
-
-    .header__col:not(.header__col_mobile){
+    .header__col:not(.header__col_mobile) {
         display: none;
     }
-
-    .header__col_mobile > .link{
+    .header__col_mobile>.link {
         align-self: stretch;
         border-bottom: 1px solid #ccc;
         text-align: center;
     }
-
 }
