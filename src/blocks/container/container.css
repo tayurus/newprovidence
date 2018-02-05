@@ -31,6 +31,19 @@
     margin-top: 50px;
 }
 
+.container__img_advantage1{
+    width: 42px;
+    height: 52px;
+    margin: 0px;
+    background: url("img/advantage1.png") no-repeat left top / cover;
+}
+.container__img_advantage2{
+    width: 41px;
+    height: 48px;
+    margin: 0px;
+    background: url("img/advantage2.png") no-repeat left top / cover;
+}
+
 
 .container_tablet{
     max-width: 768px;
@@ -56,13 +69,35 @@
     text-align: center;
 }
 
+.container_advatange{
+    max-width: 480px;
+    padding: 120px 15px 30px 15px;
+}
+
+.container__title_advantage{
+    font-size: 26px;
+    margin: 45px 0px;
+    text-align: left;
+}
+
+.container__text_advantage{
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+@media (max-width:1010px),(max-device-width:1010px) {
+    .container_advatange{
+        padding: 20px 10px;
+    }
+}
+
 @media (max-width:440px),(max-device-width:440px) {
     .container__img_iphone{
         width: 85%;
         height: 240px;
     }
 
-    .container__title{
+    .container__title:not(.container__title_advantage){
         font-size: 52px;
     }
 }

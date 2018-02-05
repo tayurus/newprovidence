@@ -1,0 +1,13 @@
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width:1010px),(max-device-width:1010px) {
+    .row_advantage{
+        justify-content: space-around;
+    }
+}
