@@ -59,3 +59,11 @@
 .button_learn .button__label {
     color: #26272d;
 }
+
+.button_invite{
+    width: 166px;
+    background-color: #77c65e;
+    color: #fff;
+    padding: 15px 25px;
+    align-items: baseline;
+}

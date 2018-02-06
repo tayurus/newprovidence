@@ -10,7 +10,14 @@
 }
 
 .row_items_top{
-        align-items: flex-start;
+    align-items: flex-start;
+}
+
+.row_social{
+    max-width: 102px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .row_buttons{
@@ -29,6 +36,19 @@
     .row_advantage{
         justify-content: space-around;
         padding-bottom: 30px;
+    }
+}
+
+@media (max-width:768px),(max-device-width:768px) {
+    .row_social{
+        max-width: 400px;
+    }
+}
+
+@media (max-width:560px),(max-device-width:560px) {
+    .row_social{
+        max-width: 100%;
+        justify-content: space-around;
     }
 }
 

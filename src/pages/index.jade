@@ -1,5 +1,6 @@
-//- MIXINS include
+//- button's mixin include
 include ../blocks/button/button.jade
+
 
 include ../blocks/head/head.jade
 body
@@ -44,7 +45,7 @@ body
                         br
                         | is protected
 
-                    .container__text.container__text.container__text_advantage 
+                    .container__text.container__text_advantage 
                         |There have not been any since we have lived here, said my mother. 
                         br
                         br
@@ -53,5 +54,13 @@ body
                     .row.row_buttons
                         +button(buttonHack)
                         +button(buttonLearn)
+                        
+        section.container
+            .container__text.container__text_small NewProvidence
+            h2.container__title.container__title_h2 Get it to your smartphone
+            .container.container_input-wrapper
+                input.container__input(type="text", placeholder="denis@getcraftwork.com")
+                +button(buttonInvite)
+                
 
     include ../blocks/footer/footer.jade

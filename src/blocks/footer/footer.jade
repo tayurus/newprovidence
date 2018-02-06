@@ -2,30 +2,35 @@ footer.footer
     .footer__left
     
         .footer__logo
-        .footer__text
+        .footer__text It was some time before he obtained any answer, and the reply, when made, was unpropitious.
         .row.row_social
-            img
+            a(href="#")
+                img(src="img/twitter.png")
+            a(href="#")
+                img(src="img/facebook.png")
+            a(href="#")
+                img(src="img/linkedin.png")
     
-        .footer__right
-            .footer_col
-                .footer__submenu-title Learn more
-                +link("How it works?", "#", "header__submenu-item")
-                +link("Meeting tools", "#", "header__submenu-item")
-                +link("Live striming", "#", "header__submenu-item")
-                +link("Contat method", "#", "header__submenu-item")
-                
-            .footer__col
-                .footer__submenu-title About us
-                +link("About us", "#", "header__submenu-item")
-                +link("Features", "#", "header__submenu-item")
-                +link("Privacy police", "#", "header__submenu-item")
-                +link("Terms & Conditions", "#", "header__submenu-item")
-                
-            .footer__col
-                .footer__submenu-title Support
-                +link("F.A.Q.", "#", "header__submenu-item")
-                +link("Contact us", "#", "header__submenu-item")
-                +link("Live chat", "#", "header__submenu-item")
-                +link("Phone call", "#", "header__submenu-item")
+    .footer__right
+        .footer__col
+            .footer__title Learn more
+            +link("How it works?", "#", "footer__item")
+            +link("Meeting tools", "#", "footer__item")
+            +link("Live striming", "#", "footer__item")
+            +link("Contat method", "#", "footer__item")
+            
+        .footer__col
+            .footer__title About us
+            +link("About us", "#", "footer__item")
+            +link("Features", "#", "footer__item")
+            +link("Privacy police", "#", "footer__item")
+            +link("Terms & Conditions", "#", "footer__item")
+            
+        .footer__col
+            .footer__title Support
+            +link("F.A.Q.", "#", "footer__item")
+            +link("Contact us", "#", "footer__item")
+            +link("Live chat", "#", "footer__item")
+            +link("Phone call", "#", "footer__item")
                 
     
