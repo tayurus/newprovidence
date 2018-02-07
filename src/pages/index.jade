@@ -1,66 +1,115 @@
 //- button's mixin include
 include ../blocks/button/button.jade
 
+doctype html
+html(lang="en")
+    include ../blocks/head/head.jade
+    body
+        include ../blocks/header/header.jade
 
-include ../blocks/head/head.jade
-body
-    include ../blocks/header/header.jade
+        main
+            section.container.container_full-width.container_background_top.container_top
+                .container.container_tablet
+                    h2.container__title What happens tomorrow?
+                    h3.container__text 
+                        | The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since
+                        | his interview with his landlady. His face brightened up, and he began to feel quite convivial.
+                    +button(buttonVideo)
+                    .container__img.container__img_iphone
 
-    main
-        section.container.container_full-width.container_background_top.container_top
-            .container.container_tablet
-                h2.container__title What happens tomorrow?
-                h3.container__text 
-                    | The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since
-                    | his interview with his landlady. His face brightened up, and he began to feel quite convivial.
-                +button(buttonVideo)
-                .container__img.container__img_iphone
+            section.container
+                .row.row_advantage
+                    .container_advatange
+                        .container__img.container__img_advantage1
+                        h3.container__title.container__title_advantage Real-time all the time
+                        h4.container__text.container__text_advantage
+                            | Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.
+                            br
+                            br
+                            | Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.
 
-        section.container
-            .row.row_advantage
-                .container_advatange
-                    .container__img.container__img_advantage1
-                    h3.container__title.container__title_advantage Real-time all the time
-                    h4.container__text.container__text_advantage
-                        | Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.
-                        br
-                        br
-                        | Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.
+                    .container_advatange
+                        .container__img.container__img_advantage2
+                        h3.container__title.container__title_advantage Adopt without any obstacles
+                        h4.container__text.container__text_advantage
+                            | This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.
+                            br
+                            br
+                            | This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.
 
-                .container_advatange
-                    .container__img.container__img_advantage2
-                    h3.container__title.container__title_advantage Adopt without any obstacles
-                    h4.container__text.container__text_advantage
-                        | This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.
-                        br
-                        br
-                        | This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.
+            section.container.container_hd
+                .row.row_center-reverse.row_items_top
+                    .container__img_iphone2
+                    .container_small
+                        h2.container__title.container__title_h2 
+                            | Your day
+                            br
+                            | is protected
 
-        section.container.container_hd
-            .row.row_center-reverse.row_items_top
-                .container__img_iphone2
-                .container_small
-                    h2.container__title.container__title_h2 
-                        | Your day
-                        br
-                        | is protected
+                        .container__text.container__text_advantage 
+                            |There have not been any since we have lived here, said my mother. 
+                            br
+                            br
+                            | We thought - Mr. Copperfield thought - it was quite a large rookery; but the nests were very old ones, and the birds have deserted them a long while.
 
-                    .container__text.container__text_advantage 
-                        |There have not been any since we have lived here, said my mother. 
-                        br
-                        br
-                        | We thought - Mr. Copperfield thought - it was quite a large rookery; but the nests were very old ones, and the birds have deserted them a long while.
-
-                    .row.row_buttons
-                        +button(buttonHack)
-                        +button(buttonLearn)
-                        
-        section.container_full.container_gray
-            .container__text.container__text_small NewProvidence
-            h2.container__title.container__title_h2.container__title_text_center Get it to your smartphone
-            .container.container_input-wrapper
-                input.container__input(type="text", placeholder="denis@getcraftwork.com")
-                +button(buttonInvite)
+                        .row.row_buttons
+                            +button(buttonHack)
+                            +button(buttonLearn)
+                            
+            section.container.container_landing
+                h2.container__title_h2.container__title_h2__center Beautiful Interface
+                .container__line.container__line_blue
+                .container__text.container__text_small Landing Screen
+                .container.container_full-width.slick-carousel
+                    img(src="img/carousel1.png",alt="img")
+                    img(src="img/carousel3.png",alt="img")
+                    img(src="img/carousel1.png",alt="img")
+                    img(src="img/carousel3.png",alt="img")
+                    img(src="img/carousel1.png",alt="img")
+                    img(src="img/carousel3.png",alt="img")
+                    img(src="img/carousel1.png",alt="img")
+                    img(src="img/carousel3.png",alt="img")
+                    
                 
+            section.container
+                .container__text.container__text_small NewProvidence
+                h2.container__title.container__title_h2 Get it to your smartphone
+                .container.container_input-wrapper
+                    input.container__input(type="text", placeholder="denis@getcraftwork.com")
+                    +button(buttonInvite)
+                    
+            section.container_full.container_gray
+                .container__text.container__text_small NewProvidence
+                h2.container__title.container__title_h2.container__title_text_center Get it to your smartphone
+                .container.container_input-wrapper
+                    input.container__input(type="text", placeholder="denis@getcraftwork.com")
+                    +button(buttonInvite)
+                    
+                    
+                .owl-carousel
+                    .container.container__feedback
+                        .container__title.container__title_feedback New Providence is the great UI kit 
+                        .container__text.container__text_feedback “Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.”
+                        .container__raiting
+                            .container__star
+                            .container__star
+                            .container__star
+                            .container__star
+                            .container__star
+                        .container__user-name Cameron Dowman
+                
+                    
+                    .container.container__feedback
+                        h2.container__title.container__title_feedback Lorem ipsum Lorem ipsum Lorem ipsum
+                        .container__text.container__text_feedback Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                        .container__raiting
+                            .container__star
+                            .container__star
+                            .container__star
+                            .container__star
+                            .container__star
+                        .container__user-name Harry Potter
+                
+                    
 
-    include ../blocks/footer/footer.jade
+        include ../blocks/footer/footer.jade
