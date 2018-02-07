@@ -5,9 +5,9 @@
 - var buttonInvite = {className : "button_invite", imgAfter : "img/arrowRight.png", label : "Send Invite", href : "#"} 
 
 mixin button(data)
-    button.button(class=data.className, onclick="location.href="+data.href)
+    button.button(class=data.className, onclick="location.href=\'"+data.href + "\'")
         if (data.imgBefore)
-            img.button__img-before(src=data.imgBefore)
+            img.button__img-before(src=data.imgBefore, alt="img")
         span.button__label= data.label
         if (data.imgAfter)
-            img.button__img-after(src=data.imgAfter)
+            img.button__img-after(src=data.imgAfter, alt="img")

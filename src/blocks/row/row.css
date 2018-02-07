@@ -20,11 +20,15 @@
     align-items: center;
 }
 
+.row_social > a:hover{
+    transform: rotate(360deg);
+}
+
 .row_buttons{
     margin-top: 75px;
 }
 
-@media (max-width:1030px), (max-device-width:1030px) {
+@media (max-width:1070px), (max-device-width:1070px) {
     .row_center-reverse{
         justify-content: space-around;
         flex-direction: column-reverse;

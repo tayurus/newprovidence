@@ -29,16 +29,20 @@
 
 .button_video {
     width: 207px;
-    display: block;
+    display: flex;
     margin: auto;
     background-color: #edf0f2;
     border: 1px solid #dddee1;
     padding: 20px 40px 20px 41px;
-    align-items: center;
+    align-items: baseline;
 }
 
 .button_video>.button__label {
     color: #26272d;
+}
+
+.button_video:hover{
+    background-color: #ddd;
 }
 
 .button_hack {
@@ -49,11 +53,19 @@
     align-items: baseline;
 }
 
+.button_hack:hover{
+    background-color: #267DCD;
+}
+
 .button_learn {
     width: 142px;
     border: 1px solid #dddee1;
     padding: 15px 25px;
     background-color: #fff;
+}
+
+.button_learn:hover{
+    background-color: #ddd;
 }
 
 .button_learn .button__label {
