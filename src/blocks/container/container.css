@@ -46,6 +46,7 @@
 
 .container__input{
     width: 320px;
+    background-color: #f5f5f8;
     padding: 18px 25px;
     color: #3a3d4b;
     border: 0px;
@@ -117,7 +118,7 @@
     font-size: 42px;
 }
 
-.container__title_h2__center{
+.container__title_text_center{
     text-align: center;
 }
 
@@ -156,9 +157,18 @@
 }
 
 .container__feedback{
-    padding: 100px 0px;
+    padding: 100px 15px;
     max-width: 556px;
         margin: auto;
+}
+
+.container__user{
+    width: 131px !important; /*sorry*/
+    height: 131px;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
 }
 
 .container__title_feedback{

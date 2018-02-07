@@ -3,14 +3,15 @@ $(document).ready(function() {
         centerMode: true,
         centerPadding: '60px',
         slidesToShow: 5,
+        autoplay: true,
+        autoplaySpeed: 2000,
         responsive: [{
                 breakpoint: 800,
                 settings: {
                     arrows: false,
                     centerMode: true,
                     centerPadding: '15px',
-                    slidesToShow: 3,
-                    infinite: true
+                    slidesToShow: 3
                 }
             },
             {
@@ -26,7 +27,10 @@ $(document).ready(function() {
     });
 
     $(".owl-carousel").owlCarousel({
-        items: 1
+        items: 1,
+        autoplay:true,
+        autoplayTimeout:2000,
+        loop:true
     })
 
     $(".slick-slide").click(function(){

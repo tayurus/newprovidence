@@ -1,15 +1,16 @@
 let gulp = require("gulp");
 let jade = require("gulp-jade");
 let autoprefixer = require('gulp-autoprefixer');
-var concat = require('gulp-concat');
-var rename = require('gulp-rename');
+let concat = require('gulp-concat');
+let rename = require('gulp-rename');
+let cleanCSS = require('gulp-clean-css');
 
 // SOURCES
 let src = {
     css: ["**/*.css", "!node_modules/**/*.css"],
     js: ["**/*.js", "!node_modules/**/*.js", "!gulpFile.js"],
     pages: ["pages/**/*.jade"],
-    img: ["**/*.png", "**/*.jpg", "**/*.svg"],
+    img: ["**/*.png", "**/*.jpg", "**/*.svg", "**/*.ico"],
 }
 
 let dist = {
@@ -35,10 +36,13 @@ gulp.task("build", function() {
         .pipe(autoprefixer({
             browsers: autoprefixBrowsers
         }))
+        .pipe(cleanCSS())
         .pipe(gulp.dest(dist.main));
 
     //JS
-    gulp.src(src.js).pipe(concat("script.js")).pipe(gulp.dest(dist.main));
+    gulp.src(src.js)
+    .pipe(concat("script.js"))
+    .pipe(gulp.dest(dist.main));
 
     //FONTS
     gulp.src("fonts/**/*.*",  { base: './' }).pipe(gulp.dest(dist.main));
